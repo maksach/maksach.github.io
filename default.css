@@ -330,6 +330,9 @@
 	{
 		overflow: hidden;
 		padding: 5em 0em;
+		width: 1280px;
+		height: 450px;
+		background-position: -10px -190px;
 		/*background: #800000;*/
 		background-image: url("images/laptop.jpg");
 	}
@@ -345,14 +348,23 @@
 	#logo
 	{
 		padding: 5em 0em;
-		text-align: center;
+		width: 1280px;
+		text-align: left;
+		height: 450px;
 		color: #ffffff;
 	}
 	
 	#logo h1
 	{
-		font-size: 3.5em;
+		margin: auto;
+		font-size: 5em;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		color: #ffffff
+	}
+
+	#logo h2
+	{
+		padding-left: 25px;
 	}
 	
 	#logo a
