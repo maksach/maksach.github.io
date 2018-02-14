@@ -330,7 +330,8 @@
 	{
 		overflow: hidden;
 		padding: 5em 0em;
-		background: #800000;
+		/*background: #800000;*/
+		background-image: url("images/laptop.jpg");
 	}
 
 	#header
