@@ -620,7 +620,7 @@
 	.column3,
 	.column4
 	{
-		width: 250px;
+		width: 360px;
 	}
 	
 	.column1,
@@ -629,7 +629,7 @@
 	.column4
 	{
 		float: left;
-		margin-right: 50px;
+		margin-right: 40px;
 	}
 	
 
