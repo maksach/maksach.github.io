@@ -25,8 +25,58 @@ Released   : 20130910
 
 </head>
 <body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
 <div id="header-wrapper">
 	<div id="header" class="container">
+		<div id="mySidenav" class="sidenav">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#about">About</a>
+			<a href="#projects">Projects</a>
+			<a href="#email">Email</a>
+			<a href="#contact">Contact</a>
+		</div>
+
+		<div id="menuButton">
+			<span id="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		</div>
+
+		<script>
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		}
+		</script>
 		
 		<div id="logo">
 			<h1>Sachin Makaram</h1>
@@ -35,7 +85,7 @@ Released   : 20130910
 	</div>
 </div>
 <div id="wrapper1">
-	<div id="welcome" class="container">
+	<div id="about" class="container">
 		<div class="title">
 			<h2>about me</h2>
 			
@@ -48,7 +98,7 @@ Released   : 20130910
 	</div>
 </div>
 <div id="wrapper3">
-	<div id="portfolio" class="container">
+	<div id="projects" class="container">
 		<div class="title">
 			<h2>projects</h2>
 			<span class="byline"></span> </div>
@@ -94,11 +144,11 @@ Released   : 20130910
 </div>
 
 <div id="wrapper2">
-	<div id="newsletter" class="container">
+	<div id="email" class="container">
 		<div class="title">
 			<h2>contact me</h2>
 		<div class="content">
-				<form method="POST" action="index.php">
+				<form method="POST" action="https://script.google.com/macros/s/AKfycbzaMj5b00QW6qEt52imXqrNh20BnJYkZwZBMjgZqt020mb-ysc/exec">
 					<div class="row half">
 						<div class="6u">
 							<input type="text" class="text" name="name" placeholder="Name" />
@@ -120,7 +170,7 @@ Released   : 20130910
 	</div>
 </div>
 <div id="wrapper4">
-	<div id="footer" class="container">
+	<div id="contact" class="container">
 		<div>
 			<header class="title">
 				<h2>get in touch</h2>
