@@ -5,8 +5,8 @@
 	
 	body
 	{
-		margin: 0px;
-		padding: 0px;
+		margin: 0;
+		padding: 0;
 		background: #333333;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 12pt;
@@ -446,11 +446,16 @@
 	#wrapper1
 	{
 		background: #242424;
+		width: 100%;
+		overflow: hidden;
 	}
 
 	#wrapper2
 	{
 		background: #EDEDED;
+		width: 100%;
+		overflow: hidden;
+
 	}
 
 	#wrapper3
@@ -458,6 +463,8 @@
 		overflow: hidden;
 		padding: 8em 0em;
 		background: #FFF;
+		width: 100%;
+		overflow: hidden;
 	}
 	
 	#wrapper4
@@ -465,6 +472,9 @@
 		overflow: hidden;
 		padding: 8em 0em;
 		background: #800000;
+		width: 100%;
+		overflow: hidden;
+
 	}
 
 /*********************************************************************************/
