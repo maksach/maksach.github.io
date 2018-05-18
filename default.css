@@ -59,7 +59,8 @@
 	.container
 	{
 		margin: 0px auto;
-		width: 1200px;
+		/*width: 1200px;*/
+		width: 100%;
 	}
 	
 
