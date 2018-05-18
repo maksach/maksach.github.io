@@ -331,7 +331,8 @@
 	{
 		overflow: hidden;
 		padding: 5em 0em;
-		width: 1280px;
+		/*width: 1280px;*/
+		width: 100%;
 		height: 450px;
 		background-position: 0px -190px;
 		/*background: #800000;*/
